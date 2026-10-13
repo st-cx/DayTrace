@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "DayTrace 网站域名采集（可选）",
+  "version": "0.2.0",
+  "description": "仅在你明确启用后，将当前浏览器标签页的域名发送到本机 DayTrace，不发送路径或网页正文。",
+  "permissions": [
+    "tabs",
+    "storage",
+    "alarms"
+  ],
+  "host_permissions": [
+    "http://127.0.0.1:41789/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_page": "options.html",
+  "action": {
+    "default_title": "DayTrace · 在扩展选项中配置授权密钥"
+  }
+}
